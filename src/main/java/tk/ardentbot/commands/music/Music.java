@@ -537,15 +537,7 @@ public class Music extends Command {
                         channel, user);
             }
         });
-
-        subcommands.add(new Subcommand("Clear all songs from the queue", "clear") {
-            @Override
-            public void onCall(Guild guild, MessageChannel channel, User user, Message message, String[] args) throws Exception {
-                sendTranslatedMessage("Please use /clear instead or type /help for to see our music category commands!",
-                        channel, user);
-            }
-        });
-
+        
         subcommands.add(new Subcommand("View information about the currently playing song", "playing") {
             @Override
             public void onCall(Guild guild, MessageChannel channel, User user, Message message, String[] args) throws Exception {
